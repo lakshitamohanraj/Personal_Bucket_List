@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>2022_Bucket_list</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            font-family:sans-serif;
+        }
+        .header{
+            height:100px;
+            width:100%;
+            background-color: rgb(175, 213, 195);
+        }
+        h1{
+            text-align:center;
+            font-size :2.7em;
+            color:beige;
+           
+        }
+        .input-block{
+            text-align:center;
+            line-height:4.5em;
+            height:300px;
+            background: url('https://wallpapercave.com/wp/jnETzbZ.jpg') no-repeat center center /cover;
+        }
+        input{
+            font-size:1.5em;
+            outline-color: greenyellow;
+            border-radius: 25px;
+            width:350px;
+            height:50px;
+        }
+        #addButton{
+            font-family:cursive;
+             background-color: greenyellow;
+             width:100px;
+             height:50px;
+             border-radius:25px;
+        }
+        #addButton:hover{
+            background-color: rgb(131, 207, 18);
+                }
+        .display-block{
+               text-align:center;
+               line-height:2em;
+        }  
+         #heading2{
+            font-size:larger;
+            font-style: italic;
+         }     
+         .ticked-items{
+            margin:2px;
+            padding:3px;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 25px;
+            border-color: greenyellow;
+            left:600px;
+            position:relative;
+            text-align: left;
+            width:300px;
+            height:50px;
+        /* outline-color:greenyellow;
+            outline-style: outset;*/
+         }
+         #resetButton{
+            margin:50px;
+            width:250px;
+            height:50px;
+            background-color: greenyellow;
+            border-radius: 25px;
+            border: none;
+         }
+         #resetButton:hover{
+            background-color: rgb(131, 207, 18);
+         }
+         #tick{
+            width:50px;
+            font-size: 2em;
+            position: relative;
+            left: 250px;
+            background-color: transparent;
+            bottom: 35px;
+            border-radius: 25px;
+            border: none;
+         }
+         #tick:hover{
+            color:greenyellow;
+         }
+    </style>
+</head>
+<body>
+    
+
+      <div class="header">
+      </div>
+    <div class="input-block">
+    <h1>My 2023 Bucket List</h1>
+    <input type="text" id="list-item">
+    <button id="addButton">Add</button>
+    </div>
+
+    <div class="display-block">
+      <h3 id="heading1">Here's what you gotta do this year</h3>
+      <p id="heading2">The first think on your bucket list to tick things of your bucket list.So,go ahead buddy 😊😋..</p>
+
+    <div class="ticked-items">
+      <p id="about">none</p>
+      <button id="tick">✓</button>
+    </div>
+
+      <button id="resetButton"><h2>Reset Bucket List</h2></button>
+    </div>
+
+ <script src="bucket_list.js"></script>
+    
+</body>
+</html>
